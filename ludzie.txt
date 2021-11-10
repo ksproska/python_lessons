@@ -1,0 +1,100 @@
+p	Christine	Hermans	24
+s	Daniel	Sanchez	25	530291
+s	Ryan	Annas	23	587262
+s	Cecelia	Lariviere	22	682080
+s	Joshua	Johnson	29	568520
+p	Tamara	Young	25
+s	Nellie	Davis	19	609090
+p	Todd	Cardenas	25
+s	George	Musso	18	309878
+p	Michelle	Rogers	31
+p	Gerald	Brooks	31
+s	Alma	Danielson	28	397267
+s	Evon	Murphy	18	216045
+s	Kathleen	Obrien	28	127591
+p	John	Griswell	31
+s	Aleen	Potvin	30	978828
+p	Daniel	Snyder	31
+p	Michelle	Sult	18
+s	Angela	Leahy	31	295037
+p	Christopher	Cook	21
+s	Judith	George	26	202195
+s	Mark	Cost	18	123717
+s	Lisa	Duran	28	425789
+s	Marlon	Martinek	21	340894
+s	Terri	Brighton	29	555683
+p	Maureen	Carlton	29
+s	Orlando	Diaz	28	323782
+s	Susan	Ledford	19	656696
+s	Andres	Fries	19	942907
+s	Samuel	Overton	23	866631
+s	David	Blevins	21	412067
+s	Lona	Trover	30	267816
+p	Juan	Robertson	24
+p	Rae	Harmon	20
+s	Tina	Warren	30	265147
+s	Mark	Smith	26	948800
+s	Alisia	Martin	23	331603
+p	Travis	Silva	18
+s	Pedro	Damiano	24	998196
+s	Elizabeth	Arko	19	407496
+p	Ann	Martinez	30
+p	Elijah	Mcwhorter	28
+s	David	Jefferson	31	258241
+s	Angela	Cremin	27	456524
+p	Brittany	Tosten	25
+p	Geneva	Cobb	29
+p	Christine	Phillips	29
+s	Barbara	Hooper	20	906717
+s	Aura	Vasmadjides	21	187482
+p	Ann	Azulay	24
+s	Robert	Fuentes	31	403134
+s	Sara	Cleghorn	31	577590
+p	George	Lane	29
+s	Marna	Oyler	29	988840
+s	Aaron	Nalley	29	881360
+s	Sherry	Blevins	24	245607
+p	Perry	Martin	19
+p	Cathy	Epps	29
+s	Garnett	Drewes	18	247319
+p	Arnold	Flores	23
+p	Matthew	Barreras	21
+s	Lillian	Vickers	31	742510
+p	Helen	Herman	27
+s	Sharon	Steele	22	860582
+p	Derrick	Romano	25
+s	Steve	Smith	28	237782
+p	Mabel	Sulley	26
+p	Edna	Pettey	27
+p	Angela	Gourley	19
+s	Jessica	Salinas	25	566820
+s	Raymond	Mcghee	22	921183
+p	Stephanie	Crocker	20
+s	Michael	Carroll	21	430911
+s	Paul	Tucker	28	407590
+p	Gary	Anderson	27
+s	Carol	Stinebaugh	30	575498
+p	Charlie	Roland	30
+p	Carol	Ziego	22
+p	Albert	Werner	23
+p	Ruby	Miles	28
+s	Gabriela	Andrews	27	303566
+p	Marcia	Villaman	26
+s	Lori	Mata	31	395533
+s	Donald	Saravia	29	646896
+p	Cecelia	Harris	18
+s	Mary	Carbone	30	292891
+p	Arlene	Flores	30
+p	John	Crowley	31
+p	Randy	Annino	20
+p	Angela	Amore	21
+s	Glenna	Benitez	31	776704
+s	Harriet	Benitez	18	556785
+p	Mary	Marks	18
+p	Ronald	Harteau	27
+s	Denise	Tassin	31	111005
+s	Sylvie	Sutton	30	231180
+s	Albert	Adkins	27	501754
+s	Ronald	Dickey	23	897510
+s	Amelia	Tapia	28	801058
+s	Margie	Felton	20	229880
