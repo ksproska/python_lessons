@@ -3,6 +3,9 @@ import datetime
 
 class Zwierze:
     # klasa jest to wzór przy pomocy którego możemy tworzyć obiekty
+    # obiekt jest instancją danej klasy, to znaczy "fizycznie istniejączym obiektem"
+    # klasą może być np zwierze, pies, kot
+    # obiekt to np miś uszatek, kot filemon, pies reksio - "fizycznie istniejące"
 
     def __init__(self, imie: str, data_urodzenia: datetime.datetime):
         # to jest konstruktor - służy on do tworzenia nowych obiektów
@@ -31,6 +34,11 @@ class Zwierze:
 
 
 class Kanarek(Zwierze):
+    # nawiasy po kanarku oznaczają klasę po której dziedziczy kanarek
+    # dziedziczenie obejmuje atrybuty i metody
+    # oznacza to, że dzięki dziedziczeniu możemy rozszerzyć funkcjonalność klasy
+    # np poprzez dodawanie kolejnych metod czy atrybutów
+
     def odzew(self) -> str:
         # to jest metoda zwracająca element, do tego używa się słowa return
         return 'świr świr'
@@ -57,17 +65,20 @@ class Pies(Zwierze):
 
     def wyswietl_szczepienia(self):
         # to jest metoda która nic nie zwraca, ale wyświetla szczepienia
-        for choroba in self.szczepienia:
-            print(choroba)
+        print(f'szczepienia: {self.szczepienia}')
 
 
 if __name__ == '__main__':
     z = Pies('Burek', datetime.datetime(2002, 12, 1))
+    print(z)
     print(z.wiek())
     print(z.odzew())
-    print(z)
+    z.dodaj_szczepienie('wścieklizna')
+    z.dodaj_szczepienie('inna choroba - nie jestem ;)')
+    z.wyswietl_szczepienia()
 
     k = Kanarek('Pierzak', datetime.datetime(2021, 1, 1))
-    print(k.odzew())
     print(k)
+    print(k.wiek())
+    print(k.odzew())
 
