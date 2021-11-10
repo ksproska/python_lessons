@@ -31,6 +31,19 @@ text[0] # pierwsza litera tekstu
 text.replace('t', 'u') # zamana wszyltkich t w tekście na
 'jakies zdanie ze spacjami'.split(' ') # rozbija string na tablicę ['jakies', 'zdanie', 'ze', 'spacjami']
 
+# zamiana stringów na inty i z powrotem
+liczba_jako_text = '10'
+print(liczba_jako_text)
+
+liczba_jako_text += liczba_jako_text
+print(liczba_jako_text)
+
+liczba_jako_liczba = int(liczba_jako_text)
+print(liczba_jako_liczba)
+
+liczba_jako_text = str(liczba_jako_liczba + 10000)
+print(liczba_jako_text)
+
 # jeśli chcemy wyświetlić element używamy funkcji print:
 print(text)
 
