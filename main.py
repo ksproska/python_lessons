@@ -19,6 +19,7 @@ d = True # boolean - wartości True lub False
 # dla typów liczbowych mamy różne operacje matematyczne:
 nazwa = 1 # przypisanie wartości
 nazwa == 2 # porównanie wartości
+nazwa <= 10
 nazwa = nazwa*2 + 15
 
 # dla typów boolean najczęstrze operacje:
@@ -46,6 +47,10 @@ print(liczba_jako_text)
 
 # jeśli chcemy wyświetlić element używamy funkcji print:
 print(text)
+
+# struktura warunkowa if - wykonuje się tylko gdy warunek jest spełniony
+if True:
+    print('to się wydrukuje ponieważ warunek jest spełniony')
 
 # pętla for działa w ten sposób, że przechodzimy po odpowiednich elementach do końca:
 for litera in text:
