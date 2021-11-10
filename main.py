@@ -11,7 +11,7 @@ def g(x, y):
 # wartości w pythonie mogą być różnych typów:
 a = 1  # int - liczba całkowita
 b = 2.2  # float/dubble - zmiennoprzecinkowa
-c = "tekst"  # string - ciąg znaków
+c = "tekst"  # string - ciąg znaków ''
 d = True # boolean - wartości True lub False
 
 # typów jest o wiele więcej, ale na początek starczy :)
@@ -19,6 +19,7 @@ d = True # boolean - wartości True lub False
 # dla typów liczbowych mamy różne operacje matematyczne:
 nazwa = 1 # przypisanie wartości
 nazwa == 2 # porównanie wartości
+nazwa != 2
 nazwa <= 10
 nazwa = nazwa*2 + 15
 
@@ -36,7 +37,7 @@ text.replace('t', 'u') # zamana wszyltkich t w tekście na
 liczba_jako_text = '10'
 print(liczba_jako_text)
 
-liczba_jako_text += liczba_jako_text
+liczba_jako_text += "10"
 print(liczba_jako_text)
 
 liczba_jako_liczba = int(liczba_jako_text)
@@ -61,3 +62,12 @@ for text2 in 'jakies zdanie ze spacjami'.split(' '):
 
 # zad 1: wypisz w konsoli tylko imona ludzi z poniższego stringa
 tekst_ludzie = "Kamila-Sproska Szymon-Sproski Witek-Fracek"
+
+for osoba in tekst_ludzie.split(' '):
+    for tekst in osoba.split("-"):
+        if tekst[-1] == 'a' or tekst[0] =='W':
+            print(tekst)
+
+text = 'akaljdsakj'
+dlugosc = len(text)
+print(dlugosc)

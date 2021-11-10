@@ -65,7 +65,7 @@ class Pies(Zwierze):
 
     def wyswietl_szczepienia(self):
         # to jest metoda która nic nie zwraca, ale wyświetla szczepienia
-        print(f'szczepienia: {self.szczepienia}')
+        print(f'szczepienia dla {self.imie}: {self.szczepienia}')
 
 
 if __name__ == '__main__':
