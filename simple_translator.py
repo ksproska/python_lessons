@@ -1,5 +1,8 @@
+from calendar import month_name
 from tkinter import *
+from tkinter import ttk
 from google_translator_simplified import Translator
+from ponstrans import translate
 window = Tk()
 window.title('Pierwszy program Agaty')
 frame = Frame(window)
@@ -11,28 +14,64 @@ text_pl.config(height=3, width=50)
 text_en.grid(column=0, row=1)
 text_en.config(height=3, width=50)
 
+sel_ang = StringVar()
+en_cb = ttk.Combobox(window, textvariable = sel_ang)
+en_cb.grid(column=0, row=2, sticky='ew')
+
 def get_polish():
     textEn = text_en.get('1.0', END)
-    translation = Translator.get_translation('pl', textEn, 'en')
+    translations = Translator.get_translation('pl', textEn, 'en')
     text_pl.delete('1.0', END)
-    text_pl.insert(INSERT, translation)
+    text_pl.insert(INSERT, translations)
+    translations = translate(word=textEn, source_language='en', target_language='pl')
+    translations = [t["target"] for t in translations]
+    en_cb ['values'] = translations
+    en_cb.focus_set()
+
+
+def podmiana_polskiego(env=None):
+    text_pl.delete('1.0', END)
+    text_pl.insert(INSERT, sel_ang.get())
+en_cb.bind('<<ComboboxSelected>>',podmiana_polskiego )
+
+
+sel_pl = StringVar()
+pl_cb = ttk.Combobox(window, textvariable = sel_pl)
+pl_cb.grid(column=0, row=2, sticky='ew')
 
 def get_english():
     textPl = text_pl.get ('1.0', END)
-    translation = Translator.get_translation('en', textPl,'pl')
+    translations = Translator.get_translation('en', textPl,'pl')
     text_en.delete('1.0', END)
-    text_en.insert(INSERT, translation)
+    text_en.insert(INSERT, translations)
+    translations = translate(word=textPl, source_language='pl', target_language='en')
+    translations = [t['target'] for t in translations]
+    pl_cb ['values'] = translations
+    pl_cb.focus_set()
+
+def podmiana_angielski(ekjrghflkghnv=None):
+    text_en.delete('1.0', END)
+    text_en.insert(INSERT, sel_pl.get())
+pl_cb.bind('<<ComboboxSelected>>', podmiana_angielski)
+
 
 def get_translate(evn=None):
     textEn = text_en.get('1.0', END)
     textPl = text_pl.get('1.0', END)
-    if textEn != '\n':
+    if textEn != '\n' and textPl != '\n':
+        save()
+    elif textEn != '\n':
         get_polish()
     elif textPl != '\n':
         get_english()
 
 
-Button(frame, text="Tłumacz", command=get_translate, bg='#660066', fg='#ffffff').grid(column=0, row=2, sticky='ew')
+
+
+# en_cb['values'] = [1, 3, 4, 5]
+
+
+Button(frame, text="Tłumacz", command=get_translate, bg='#660066', fg='#ffffff').grid(column=0, row=3, sticky='ew')
 
 def save(evn=None):
     textEn=text_en.get('1.0', END)
@@ -49,7 +88,7 @@ def save(evn=None):
         text_pl.delete('1.0',END)
 
 
-Button(frame, text="Zapisz", command=save, bg='#800080', fg='#ffffff').grid(column=1, row=2, sticky='ew')
+Button(frame, text="Zapisz", command=save, bg='#800080', fg='#ffffff').grid(column=1, row=3, sticky='ew')
 window.bind('<Return>', get_translate)
 window.bind('<Control-s>', save)
 
